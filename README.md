@@ -9,30 +9,28 @@ iex(1)> c("pollution.erl")
 
 Using server
 
-Erlang command interpreter:
-- when you are in this directory
-1> c("pollution_otp_server").
-{ok,pollution_otp_server}
-2> c("pollution_otp_supervisor").
-{ok,pollution_otp_supervisor}
-3> pollution_otp_supervisor:start_link().
-{ok,<0.85.0>}
-4> pollution_otp_server:getMonitor().    
-#{}
+Erlang command interpreter (when you are in this directory):  
+1> c("pollution_otp_server").  
+{ok,pollution_otp_server}  
+2> c("pollution_otp_supervisor").  
+{ok,pollution_otp_supervisor}  
+3> pollution_otp_supervisor:start_link().  
+{ok,<0.85.0>}  
+4> pollution_otp_server:getMonitor().  
+#{}  
 
-If you are testing it in the shell:
-https://stackoverflow.com/questions/12096308/why-my-supervisor-terminating
-use "catch" phrase, f.e. catch pollution_otp_server:getMonitorssssss().
+-If you are testing it in the shell:  
+https://stackoverflow.com/questions/12096308/why-my-supervisor-terminating  
+use "catch" phrase, f.e. catch pollution_otp_server:getMonitorssssss().  
 
-Elixir command interpreter:
-- when you are in this directory
-iex(1)> c("pollution_otp_server.erl")
-[:pollution_otp_server]
-iex(2)> c("pollution_otp_supervisor.erl")
-[:pollution_otp_supervisor]
-iex(3)> :pollution_otp_supervisor.start_link()
-{:ok, #PID<0.92.0>}
-iex(4)> :pollution_otp_server.getMonitor()    
+Elixir command interpreter (when you are in this directory):  
+iex(1)> c("pollution_otp_server.erl")  
+[:pollution_otp_server]  
+iex(2)> c("pollution_otp_supervisor.erl")  
+[:pollution_otp_supervisor]  
+iex(3)> :pollution_otp_supervisor.start_link()  
+{:ok, #PID<0.92.0>}  
+iex(4)> :pollution_otp_server.getMonitor()  
 %{}
 
 

@@ -1,10 +1,12 @@
-#H1 Sollution for Erlang Course at AGH WIEiT 2017
-#H1 Erlang PollutionServer with Elixir data's loader
+# Sollution for Erlang Course at AGH WIEiT 2017
+# Erlang PollutionServer with Elixir data's loader
 
-#H3 This erlang module can be run using this commands:
+### This erlang module can be run using this commands:
 
 ..*First compile/load pollution.erl to provide functions
+
 iex(1)> c("pollution.erl")     
+
 [:pollution]
 
 Using server

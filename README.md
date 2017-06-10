@@ -3,13 +3,12 @@
 
 ### This erlang module can be run using this commands:
 
+###Using server  
 First compile/load pollution.erl to provide functions  
 iex(1)> c("pollution.erl")  
 [:pollution]  
 
-Using server
-
-Erlang command interpreter (when you are in this directory):  
+####Erlang command interpreter (when you are in this directory):  
 1> c("pollution_otp_server").  
 {ok,pollution_otp_server}  
 2> c("pollution_otp_supervisor").  
@@ -19,11 +18,11 @@ Erlang command interpreter (when you are in this directory):
 4> pollution_otp_server:getMonitor().  
 #{}  
 
--If you are testing it in the shell:  
+####If you are testing it in the shell:  
 https://stackoverflow.com/questions/12096308/why-my-supervisor-terminating  
 use "catch" phrase, f.e. catch pollution_otp_server:getMonitorssssss().  
 
-Elixir command interpreter (when you are in this directory):  
+#### Elixir command interpreter (when you are in this directory):  
 iex(1)> c("pollution_otp_server.erl")  
 [:pollution_otp_server]  
 iex(2)> c("pollution_otp_supervisor.erl")  
@@ -34,14 +33,14 @@ iex(4)> :pollution_otp_server.getMonitor()
 %{}
 
 
-Load data
-iex(5)> c("pollution_data.ex")
-[PollutionData]
-iex(6)> PollutionData.load()              
-Loaded 5904 lines
-:ok
+#### Load data:  
+iex(5)> c("pollution_data.ex")  
+[PollutionData]  
+iex(6)> PollutionData.load()                
+Loaded 5904 lines  
+:ok  
 
-Funcjonality:
+#### Funcjonality:
  
 Time - {{YEAR,MONTH,DAY},{HOUR,MINUT,SECONDS}} or {YEAR,MONTH,DAY} - depends where its needed
 getMonitor()

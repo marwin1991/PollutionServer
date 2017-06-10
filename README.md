@@ -3,12 +3,12 @@
 
 ### This erlang module can be run using this commands:
 
-###Using server  
+### Using server  
 First compile/load pollution.erl to provide functions  
 iex(1)> c("pollution.erl")  
 [:pollution]  
 
-###Erlang command interpreter (when you are in this directory):  
+### Erlang command interpreter (when you are in this directory):  
 1> c("pollution_otp_server").  
 {ok,pollution_otp_server}  
 2> c("pollution_otp_supervisor").  
@@ -18,7 +18,7 @@ iex(1)> c("pollution.erl")
 4> pollution_otp_server:getMonitor().  
 #{}  
 
-###If you are testing it in the shell:  
+### If you are testing it in the shell:  
 https://stackoverflow.com/questions/12096308/why-my-supervisor-terminating  
 use "catch" phrase, f.e. catch pollution_otp_server:getMonitorssssss().  
 
@@ -40,7 +40,7 @@ iex(6)> PollutionData.load()
 Loaded 5904 lines  
 :ok  
 
-### Funcjonality:
+### Functionality:
  
 Time - {{YEAR,MONTH,DAY},{HOUR,MINUT,SECONDS}} or {YEAR,MONTH,DAY} - depends where its needed  
 * getMonitor()  

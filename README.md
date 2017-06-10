@@ -3,9 +3,9 @@
 
 ### This erlang module can be run using this commands:
 
-First compile/load pollution.erl to provide functions
-iex(1)> c("pollution.erl")
-[:pollution]
+First compile/load pollution.erl to provide functions  
+iex(1)> c("pollution.erl")  
+[:pollution]  
 
 Using server
 
